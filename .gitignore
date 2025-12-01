@@ -1,0 +1,99 @@
+# ========================================
+# SAM AT+ - Git Ignore Configuration
+# ========================================
+
+# ========================================
+# Environment Variables (CRITICAL)
+# ========================================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ========================================
+# Firebase Credentials (if they exist)
+# ========================================
+android/app/google-services.json
+!android/app/google-services.json.example
+ios/Runner/GoogleService-Info.plist
+ios/firebase_app_id_file.json
+
+# Firebase deployment
+.firebase/
+.firebaserc
+
+# ========================================
+# Data Files (potentially sensitive)
+# ========================================
+*.csv
+
+# ========================================
+# Miscellaneous
+# ========================================
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# ========================================
+# IntelliJ / Android Studio
+# ========================================
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# ========================================
+# VS Code
+# ========================================
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# ========================================
+# Flutter/Dart/Pub
+# ========================================
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# ========================================
+# Symbolication
+# ========================================
+app.*.symbols
+
+# ========================================
+# Obfuscation
+# ========================================
+app.*.map.json
+
+# ========================================
+# Android Studio build artifacts
+# ========================================
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ========================================
+# Local configuration
+# ========================================
+android/local.properties
+config.json
+
+# ========================================
+# Exceptions (files to INCLUDE)
+# ========================================
+!pubspec.lock

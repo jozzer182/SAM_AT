@@ -1,0 +1,36 @@
+dart pub global activate flutterfire_cli
+//Preferiblemente crear el proyecto antes en Firebase
+flutterfire configure
+
+pubspec.yaml
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/rules.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "images/rules.png"
+    background_color: "#dce4e8"
+    theme_color: "#dce4e8"
+#to run flutter pub run flutter_launcher_icons:main
+
+
+flutter_native_splash:
+  color: "#F1F1F1"
+  image: images/rules.png
+  #to run flutter pub run flutter_native_splash:create
+
+flutter_localizations:
+  sdk: flutter
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/rules.png
