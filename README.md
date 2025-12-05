@@ -206,9 +206,13 @@ Las contribuciones son bienvenidas. Por favor:
 
 Este proyecto es privado y de uso interno.
 
-## 📞 Contacto
+## 📬 Contacto
 
-**Desarrollador:** [@jozzer182](https://github.com/jozzer182)
+**José Zarabanda**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zarabandajose/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jozzer182)
+[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://zarabanda-dev.web.app/)
 
 ---
 
