@@ -10,102 +10,102 @@
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Google Apps Script](https://img.shields.io/badge/Google_Apps_Script-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-**Sistema de Administración de Materiales para Asistencia Técnica**
+**Material Administration System for Technical Assistance**
 
-Sistema integral para el control y seguimiento de registros de materiales en operaciones de asistencia técnica.
+Comprehensive system for control and tracking of material records in technical assistance operations.
 
-[Características](#-características) • [Instalación](#-instalación) • [Configuración](#-configuración) • [Uso](#-uso) • [Arquitectura](#-arquitectura)
+[Features](#-features) • [Installation](#-installation) • [Configuration](#-configuration) • [Usage](#-usage) • [Architecture](#-architecture)
 
 </div>
 
 ---
 
-## 📋 Descripción
+## 📋 Description
 
-**SAM AT+** es una aplicación multiplataforma desarrollada en Flutter para la gestión y control de materiales en operaciones de asistencia técnica. Permite el seguimiento de inventarios, gestión de planillas, control de deudas operativas y mucho más.
+**SAM AT+** is a multi-platform application developed in Flutter for material management and control in technical assistance operations. It enables inventory tracking, form management, operational debt control, and much more.
 
-## ✨ Características
+## ✨ Features
 
-### Gestión de Materiales
-- 📦 **Inventario** - Control completo de existencias
-- 📝 **Planillas** - Gestión de documentos y registros
-- 🔄 **Remisiones** - Seguimiento de entregas y movimientos
-- 📊 **MB51/MB52** - Reportes de movimientos de materiales
+### Material Management
+- 📦 **Inventory** - Complete stock control
+- 📝 **Forms** - Document and record management
+- 🔄 **Remissions** - Delivery and movement tracking
+- 📊 **MB51/MB52** - Material movement reports
 
-### Control Operativo
-- 💰 **Deuda Operativa** - Seguimiento de pendientes por operador
-- 🏪 **Deuda Almacén** - Control de faltantes en almacén
-- 📈 **Deuda Bruta** - Reportes consolidados de deudas
+### Operational Control
+- 💰 **Operational Debt** - Pending items tracking by operator
+- 🏪 **Warehouse Debt** - Warehouse shortage control
+- 📈 **Gross Debt** - Consolidated debt reports
 
-### Funcionalidades Adicionales
-- 🔐 **Autenticación** - Sistema de login con Firebase Auth
-- 🎨 **Temas personalizables** - Modo oscuro y colores personalizados
-- 📱 **Multiplataforma** - Soporte para Web, Android, iOS y Desktop
-- 🔍 **LCL** - Consulta de localizaciones
-- 🎫 **Tokens de seguridad** - Sistema de autorización para operaciones sensibles
+### Additional Features
+- 🔐 **Authentication** - Login system with Firebase Auth
+- 🎨 **Customizable themes** - Dark mode and custom colors
+- 📱 **Multi-platform** - Support for Web, Android, iOS, and Desktop
+- 🔍 **LCL** - Location queries
+- 🎫 **Security tokens** - Authorization system for sensitive operations
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
-| Tecnología | Uso |
-|------------|-----|
-| **Flutter** | Framework de desarrollo multiplataforma |
-| **Dart** | Lenguaje de programación |
-| **Firebase** | Autenticación, Firestore, Hosting |
-| **Supabase** | Base de datos PostgreSQL |
-| **Google Apps Script** | APIs de integración con hojas de cálculo |
-| **BLoC** | Gestión de estado |
+| Technology | Usage |
+|------------|-------|
+| **Flutter** | Multi-platform development framework |
+| **Dart** | Programming language |
+| **Firebase** | Authentication, Firestore, Hosting |
+| **Supabase** | PostgreSQL database |
+| **Google Apps Script** | Spreadsheet integration APIs |
+| **BLoC** | State management |
 
-## 📂 Arquitectura del Proyecto
+## 📂 Project Architecture
 
 ```
 lib/
-├── bloc/                    # Gestión de estado (BLoC pattern)
+├── bloc/                    # State management (BLoC pattern)
 │   ├── main_bloc.dart
 │   ├── main_event.dart
 │   └── main_state.dart
-├── Home/                    # Pantalla principal
-├── Log/                     # Autenticación
+├── Home/                    # Main screen
+├── Log/                     # Authentication
 │   ├── login_page.dart
 │   ├── auth_services.dart
 │   └── register_screen.dart
-├── resources/               # Configuraciones y utilidades
-│   ├── env_config.dart      # Variables de entorno
+├── resources/               # Configurations and utilities
+│   ├── env_config.dart      # Environment variables
 │   └── constants/
 │       └── apis.dart
-├── planilla/               # Módulo de planillas
-├── inventario/             # Módulo de inventario
-├── remisiones/             # Módulo de remisiones
-├── deuda_operativa/        # Módulo de deuda operativa
-├── deuda_almacen/          # Módulo de deuda almacén
-├── lcl/                    # Módulo LCL
-└── main.dart               # Punto de entrada
+├── planilla/               # Forms module
+├── inventario/             # Inventory module
+├── remisiones/             # Remissions module
+├── deuda_operativa/        # Operational debt module
+├── deuda_almacen/          # Warehouse debt module
+├── lcl/                    # LCL module
+└── main.dart               # Entry point
 ```
 
-## 🚀 Instalación
+## 🚀 Installation
 
-### Prerrequisitos
+### Prerequisites
 
 - [Flutter SDK](https://flutter.dev/docs/get-started/install) (>=3.7.2)
 - [Dart SDK](https://dart.dev/get-dart) (>=3.7.2)
-- Cuenta de Firebase
-- Cuenta de Supabase (opcional, para módulo LCL)
+- Firebase account
+- Supabase account (optional, for LCL module)
 
-### Pasos de Instalación
+### Installation Steps
 
-1. **Clonar el repositorio**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/jozzer182/SAM_AT.git
    cd SAM_AT
    ```
 
-2. **Instalar dependencias**
+2. **Install dependencies**
    ```bash
    flutter pub get
    ```
 
-3. **Configurar variables de entorno** (ver sección [Configuración](#-configuración))
+3. **Configure environment variables** (see [Configuration](#-configuration) section)
 
-4. **Ejecutar la aplicación**
+4. **Run the application**
    ```bash
    # Web
    flutter run -d chrome
@@ -117,96 +117,96 @@ lib/
    flutter run -d ios
    ```
 
-## ⚙️ Configuración
+## ⚙️ Configuration
 
-### Variables de Entorno
+### Environment Variables
 
-1. **Copiar el archivo de ejemplo**
+1. **Copy the example file**
    ```bash
    cp .env.example .env
    ```
 
-2. **Editar `.env` con tus credenciales**
+2. **Edit `.env` with your credentials**
    ```env
    # Firebase Configuration
-   FIREBASE_API_KEY=tu_api_key
-   FIREBASE_APP_ID=tu_app_id
-   FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
-   FIREBASE_PROJECT_ID=tu_project_id
-   FIREBASE_AUTH_DOMAIN=tu_project.firebaseapp.com
-   FIREBASE_STORAGE_BUCKET=tu_project.appspot.com
+   FIREBASE_API_KEY=your_api_key
+   FIREBASE_APP_ID=your_app_id
+   FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+   FIREBASE_PROJECT_ID=your_project_id
+   FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+   FIREBASE_STORAGE_BUCKET=your_project.appspot.com
    
    # Google Apps Script APIs
-   API_ENVIAR_SOLPE=https://script.google.com/macros/s/TU_ID/exec
-   API_FEM=https://script.google.com/macros/s/TU_ID/exec
-   API_SAM=https://script.google.com/macros/s/TU_ID/exec
-   API_SAMAT=https://script.google.com/macros/s/TU_ID/exec
+   API_ENVIAR_SOLPE=https://script.google.com/macros/s/YOUR_ID/exec
+   API_FEM=https://script.google.com/macros/s/YOUR_ID/exec
+   API_SAM=https://script.google.com/macros/s/YOUR_ID/exec
+   API_SAMAT=https://script.google.com/macros/s/YOUR_ID/exec
    
    # Supabase Configuration
-   SUPABASE_URL=https://tu-proyecto.supabase.co
-   SUPABASE_ANON_KEY=tu_anon_key
+   SUPABASE_URL=https://your-project.supabase.co
+   SUPABASE_ANON_KEY=your_anon_key
    ```
 
-### Configuración de Firebase
+### Firebase Configuration
 
-1. Ve a [Firebase Console](https://console.firebase.google.com/)
-2. Crea un nuevo proyecto o selecciona uno existente
-3. Habilita Authentication con Email/Password
-4. Copia las credenciales de tu app web a `.env`
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Create a new project or select an existing one
+3. Enable Authentication with Email/Password
+4. Copy your web app credentials to `.env`
 
-### Configuración de Supabase (Opcional)
+### Supabase Configuration (Optional)
 
-1. Ve a [Supabase Dashboard](https://app.supabase.com/)
-2. Crea un nuevo proyecto
-3. Copia la URL y Anon Key a `.env`
+1. Go to [Supabase Dashboard](https://app.supabase.com/)
+2. Create a new project
+3. Copy the URL and Anon Key to `.env`
 
-Para más detalles, consulta [docs/SETUP.md](docs/SETUP.md).
+For more details, see [docs/SETUP.md](docs/SETUP.md).
 
-## 📱 Plataformas Soportadas
+## 📱 Supported Platforms
 
-| Plataforma | Estado |
-|------------|--------|
-| Web | ✅ Completo |
-| Android | ⚠️ En desarrollo |
-| iOS | ⚠️ En desarrollo |
-| macOS | ⚠️ En desarrollo |
-| Windows | ⚠️ En desarrollo |
-| Linux | ⚠️ En desarrollo |
+| Platform | Status |
+|----------|--------|
+| Web | ✅ Complete |
+| Android | ⚠️ In development |
+| iOS | ⚠️ In development |
+| macOS | ⚠️ In development |
+| Windows | ⚠️ In development |
+| Linux | ⚠️ In development |
 
-## 🔧 Comandos Útiles
+## 🔧 Useful Commands
 
 ```bash
-# Ejecutar en modo debug
+# Run in debug mode
 flutter run
 
-# Compilar para web
+# Build for web
 flutter build web
 
-# Ejecutar tests
+# Run tests
 flutter test
 
-# Analizar código
+# Analyze code
 flutter analyze
 
-# Formatear código
+# Format code
 dart format lib/
 ```
 
-## 🤝 Contribuir
+## 🤝 Contributing
 
-Las contribuciones son bienvenidas. Por favor:
+Contributions are welcome. Please:
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📝 Licencia
+## 📝 License
 
-Este proyecto es privado y de uso interno.
+This project is private and for internal use.
 
-## 📬 Contacto
+## 📬 Contact
 
 **José Zarabanda**
 
@@ -218,6 +218,6 @@ Este proyecto es privado y de uso interno.
 
 <div align="center">
 
-Hecho con ❤️ usando Flutter
+Made with ❤️ using Flutter
 
 </div>
